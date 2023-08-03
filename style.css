@@ -1,0 +1,197 @@
+@import url('http://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@keyframes up-and-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #a72d44;
+}
+
+.container .text {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: up-and-down 5s ease-in-out infinite;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wall {
+    width: 230px;
+    height: 320px;
+    background: #992841;
+    position: relative;
+    top: 90px;
+    border-radius: 100px 100px 0 0;
+}
+
+.rect_1 {
+    width: 230px;
+    height: 30px;
+    background: #7f223d;
+    position: absolute;
+    top: 110px;
+}
+
+.rect_2 {
+    width: 7px;
+    height: 210px;
+    background: #7f223d;
+    position: absolute;
+    left: 115px;
+}
+
+.base {
+    width: 320px;
+    height: 5px;
+    border-radius: 20px;
+    background: #7f223d;
+    position: absolute;
+    left: -50px;
+    bottom: 0;
+}
+
+.lamp {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lamp_rec_1 {
+    width: 25px;
+    height: 40px;
+    background: #ffb356;
+    box-shadow: 0 10px 0 #fe7a42 inset;
+}
+
+.lamp_rec_2 {
+    position: absolute;
+    width: 5px;
+    height: 40px;
+    background: #7f223d;
+    left: 10px;
+}
+
+.lamp_rec_3 {
+    position: absolute;
+    width: 40px;
+    height: 8px;
+    background: #7f223d;
+    left: -7px;
+    top: -5px;
+}
+
+.lamp_rec_4 {
+    position: absolute;
+    width: 30px;
+    height: 13px;
+    background: #7f223d;
+    left: -2px;
+    top: -18px;
+}
+
+.lamp_circle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #7f223d;
+    left: 5px;
+    top: -32px;
+}
+
+.lamp_rec_5 {
+    position: absolute;
+    width: 27px;
+    height: 13px;
+    background: #7f223d;
+    left: -1px;
+    top: 30px;
+}
+
+.lamp_rec_6 {
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    background: #631a35;
+    left: 5px;
+    top: 42px;
+}
+
+.pot_1 {
+    width: 40px;
+    height: 40px;
+    background: #3e0d30;
+    position: absolute;
+    bottom: 5px;
+    left: -30px;
+}
+
+.pot_2 {
+    width: 50px;
+    height: 50px;
+    background: #3e0d30;
+    position: absolute;
+    bottom: 5px;
+    right: -30px;
+}
+
+.cir_1 {
+    width: 50px;
+    height: 50px;
+    background: #ff7b41;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+    top: -100px;
+}
+
+.cir_2 {
+    width: 40px;
+    height: 90px;
+    background: #ff7b41;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: -120px;
+}
+
+.stem {
+    width: 5px;
+    height: 80px;
+    background: #3e0d30;
+    position: absolute;
+    left: 18px;
+    top: -80px;
+    opacity: .4;
+}
